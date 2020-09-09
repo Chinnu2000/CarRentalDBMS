@@ -1,0 +1,49 @@
+img{
+	opacity:0.6;
+}
+
+div{
+	height:100px;
+}
+
+
+#home{
+	height:100%;
+	padding-bottom:2000px;
+	
+}
+
+p{
+	
+	margin: auto;
+  width: 50%;
+  border: 3px ;
+  padding: 10px;
+}
+
+#details{
+	height:12%;
+}
+#travel{
+    height:85%;
+	background-image: url("car_mountail.jpg");
+
+  background-color:#000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*position: absolute;*/
+  top:0px;
+  left:0px;
+  width: 100%;
+   
+}
+
+body,html{
+	height:100%;
+}
+
+
+
+
+
