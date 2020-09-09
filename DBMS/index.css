@@ -13,19 +13,46 @@ div{
 	
 }
 
-p{
-	
-	margin: auto;
-  width: 50%;
-  border: 3px ;
-  padding: 10px;
-}
+
+/*#welcome{
+  color:#ffffff;
+  font-family: Courier,"Lucida Console",  monospace;
+  text-align:center;
+  padding-top: 115px;
+  font-size:50px;
+}*/
 
 #details{
 	height:12%;
 }
+
+#target{
+  
+}
+
+#start{
+  background-color: #154C6A;
+  color: #ffffff;
+  height:50px;
+  width: 150px;
+  font-size: 15px
+
+
+}
+
+
+#start:hover{
+  background-color: #2C96CF;
+  color: #ffffff;
+  font-family: "Arial","Lucida Console",  monospace;
+
+}
 #travel{
+  color:#ffffff;
+  font-family: "Arial","Lucida Console",  monospace;
+  text-align:center;
     height:85%;
+    font-size:50px;
 	background-image: url("car_mountail.jpg");
 
   background-color:#000000;
@@ -36,8 +63,12 @@ p{
   top:0px;
   left:0px;
   width: 100%;
+  padding-top: 80px;
+  font-weight: bold;
    
 }
+
+
 
 body,html{
 	height:100%;
