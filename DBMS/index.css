@@ -1,6 +1,4 @@
-img{
-	opacity:0.6;
-}
+
 
 div{
 	height:100px;
@@ -13,6 +11,10 @@ div{
 	
 }
 
+
+#travel img{
+  opacity:0.2;
+}
 
 /*#welcome{
   color:#ffffff;
@@ -27,12 +29,57 @@ div{
   text-align: center;
 }
 
+
+ul{
+  background-color: #154C6A;
+}
+li{
+  background-color: #154C6A;
+  float:right;
+  margin-right:10px;
+  font-size: 20px;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #154C6A;
+  margin-top: 10px;
+  padding-right: 5px;
+  font-family: "Arial","Lucida Console",  monospace;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#logo{
+  float:left;
+  margin:5px;
+}
+
 #details{
 	height:10%;
 }
 
+#login_section{
+  position: center;
+}
 #target{
   
+}
+
+#login_section, #signup_section{
+  width:50%;
+}
+
+#login{
+  float: right;
 }
 
 #start{
