@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Car Rental</title>
+	<link rel="icon" href="logo.png" type="image/icon type">
 	<link href = "index.css" rel="stylesheet">
 	<style>
 html {
@@ -11,7 +12,16 @@ html {
 </head>
 <body>
 	<div style = "background-color: #E8EBEC" id ="home">
-		<div style="background-color:#154C6A" id = "details"><a href="https://www.google.com" style="color: #ffffff">Click!</a>
+		<div style="background-color:#154C6A" id = "details">
+
+			<ul>
+
+				<li><a href="#signup">SIGN UP</a></li>
+				<li><a href="login.html" target="_blank">LOGIN</a></li>
+				<li><a href="car.html">CARS</a></li>
+				<li id="logo"><img src="logo.png"></li>
+				
+			</ul>
 		</div>
 		<div  id="travel">WELCOME Teachers!<br/>
 			<p style="font-size: 35px">TechSquad_Group16</p>
@@ -19,13 +29,49 @@ html {
 		</div>
 		<p id="target"><h1 class="about_content">About the Project</h1>
 			<h2 class="about_content">Topic: Online Car Rental System</h2>
-			<p class="about_content" id="intro" >Our project is an online website that manages a car renting business. The system provides the user to rent a car as per their specifications like brand, cost, capacity, etc. It provides all functions including listing car information, booking, and payment. The admin can add a car, manage booking car and rent and also view feedback and enquiry. Users can view information of available cars, booking cars, easily get the car on rent and also give feedback and can do enquiry.
-</p>
+			<p class="about_content" id="intro" >Our project is an online website that manages a car renting business. The system provides the user to rent a car as per their specifications like brand, cost, capacity, etc. It provides all functions including listing car information, booking, and payment. The admin can add a car, manage booking car and rent and also view feedback and enquiry. Users can view information of available cars, booking cars, easily get the car on rent and also give feedback and can do enquiry.<br/>
+				<br/>
+				<br/>
+				Tools used:<br/>
+				Front End: HTML, CSS<br/>
+				Back End: Angular JS
+			</p>
+		</p>
 
+		<div id="login_section" style="background-color:#E8EBEC " >
+			<ul style="background-color:#E8EBEC " id="signup" >
+				<li style="background-color:#E8EBEC " id="login_list">
+					<form style="background-color:#E8EBEC ">
+						<h3>Sign Up</h3>
+						<label for="fname_signup">First Name</label><br>
+						<input type="text" id="fname_signup" name="fname_signup" placeholder="Enter First Name"><br>
+						<label for="lname_signup">Last Name</label><br>
+						<input type="text" id="lname_signuo" name="lname_signup" placeholder="Enter Last Name"><br>
+						<label for="email_login">Email Id</label><br>
+						<input type="Email" id="email_signup" name="email_signup" placeholder="Enter Email ID"><br>
+						<label for="bday_signup">Date of Birth:</label><br>
+						<input type="date" id="bday_signup" name="bday_signup"><br>
+						<label for="add_signup">Address:</label><br>
+						<input type="text" id="add_signup" name="add_signup"><br>
+						<label for="username">User Name</label><br>
+						<input type="text" id="username" name="username"><br>
+						<label for="pswd">Password:</label><br>
+						<input type="password" id="pswd" name="pswd"><br>
+						<label for="con_pswd">Confirm  Password:</label><br>
+						<input type="password" id="con_pswd" name="con_pswd"><br>
+				</li>
+				<li style="background-color:#E8EBEC ">
+					<form style="background-color:#E8EBEC ">
+						<h3>Login</h3>
+						<label for="text">User Name</label><br>
+						<input type="text" id="user_login" name="user_login" placeholder="Enter user name"><br>
+						<label for="password">Password</label><br>
+						<input type="password" id="password" name="password" placeholder="Enter Password"><br>
+						
+						
+				</li>
+			</ul>
+		</div>
 	</div>
-
-
-
-
-	</body>
-	</html>
+</body>
+</html>
