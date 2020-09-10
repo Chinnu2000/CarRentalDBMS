@@ -22,8 +22,13 @@ div{
   font-size:50px;
 }*/
 
+.about_content{
+  color:#3086A3;
+  text-align: center;
+}
+
 #details{
-	height:12%;
+	height:10%;
 }
 
 #target{
@@ -51,7 +56,7 @@ div{
   color:#ffffff;
   font-family: "Arial","Lucida Console",  monospace;
   text-align:center;
-    height:85%;
+    height:73%;
     font-size:50px;
 	background-image: url("car_mountail.jpg");
 
@@ -66,6 +71,13 @@ div{
   padding-top: 80px;
   font-weight: bold;
    
+}
+
+#intro{
+  font-size: 20px;
+  width:75%;
+  margin: auto;
+  padding: 10px;
 }
 
 
