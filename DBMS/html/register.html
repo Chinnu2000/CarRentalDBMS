@@ -139,6 +139,8 @@
         var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
         var enoughRegex = new RegExp("(?=.{6,}).*", "g");
         var pwd = document.getElementById("password");
+        var confirm = document.getElementById("cnfPassword");
+        var a = document.getElementById("cnfPasswordHelp");
         if (pwd.value.length == 0) {
             strength.innerHTML = 'Type Password';
         } else if (false == enoughRegex.test(pwd.value)) {
@@ -149,6 +151,12 @@
             strength.innerHTML = '<span style="color:orange">Medium!</span>';
         } else {
             strength.innerHTML = '<span style="color:red">Weak!</span>';
+        }
+        if(pwd.value==confirm.value ){
+          a.innerHTML = '<span style="color:green">Matched!</span>';
+        }else{
+          
+           a.innerHTML = '<span style="color:green">Password does not match!</span>';
         }
     }
 </script>
@@ -167,6 +175,7 @@
             name="password2"
             placeholder="Confirm password"
             id="cnfPassword"
+            onkeyup="return passwordChanged();"
           />
           <p id="cnfPasswordHelp" class="invalid-feedback d-block"></p>
           <button class="button button2" type="submit" >Sign up</button>
