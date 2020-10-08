@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">-->
 	<title>Car Rental</title>
 	<link rel="icon" href="logo.png" type="image/icon type">
 	<link href = "index.css" rel="stylesheet">
+	<script src="carousel.js"></script>
 	<style>
 html {
   scroll-behavior: smooth;
@@ -16,9 +25,9 @@ html {
 
 			<ul>
 
-				<li><a href="html\register.html">SIGN UP</a></li>
-				<li><a href="html\login.html" target="_blank">LOGIN</a></li>
-				<li><a href="car.html">CARS</a></li>
+				<li><a href="html\register.html">Sign Up</a></li>
+				<li><a href="html\login.html" target="_blank">Login</a></li>
+				<li><a href="car.html">Cars</a></li>
 				<li id="logo"><img src="logo.png"></li>
 				
 			</ul>
@@ -27,6 +36,7 @@ html {
 			<p style="font-size: 35px">Car Rental Service</p>
 			<a href="#target"><button id="start" >Let's get started!</button></a>
 		</div>
+
 		<p id="target"><h1 class="about_content">About the Project</h1>
 			<h2 class="about_content">Topic: Online Car Rental System</h2>
 			<p class="about_content" id="intro" >Our project is an online website that manages a car renting business. The system provides the user to rent a car as per their specifications like brand, cost, capacity, etc. It provides all functions including listing car information, booking, and payment. The admin can add a car, manage booking car and rent and also view feedback and enquiry. Users can view information of available cars, booking cars, easily get the car on rent and also give feedback and can do enquiry.<br/>
@@ -37,41 +47,37 @@ html {
 				Back End: Angular JS
 			</p>
 		</p>
+		<div id="carousel_container">
+			<div id="0" class="slides" >
+				<script>
+					document.getElementById(0).style.display = "block";
+				</script>
+				<img src="backlight.jpg" style="width:100%" class="mySlides fade">
+				<a class="prev" id = "prev1" onclick="plusSlides(-1)" style="color: #ffffff">&#10094;</a>
+				<a class="next" id = "next1" onclick="plusSlides(1)" style = "color: #ffffff">&#10095;</a>
+				<div class="num">1/3</div>
+			</div>
+			<div id="1" class="slides" style="height:100%">
+				<img src="car_mountail.jpg" style="width:100%" class="mySlides fade">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="num">2/3</div>
+			</div>
+			<div id="2" class="slides" style="height:100%">
+				<img src="orange.jpg" style="width:100%" class="mySlides fade">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="num">3/3</div>
+			</div>
+			
+  		</div>
+  		<div style="text-align:center">
+  <span class="dot" id="3" onclick="currentSlide(1)"></span> 
+  <span class="dot" id="4" onclick="currentSlide(2)"></span> 
+  <span class="dot" id="5" onclick="currentSlide(3)"></span> 
+</div>
+  	</div>
+		
 
-		<div id="login_section" style="background-color:#E8EBEC " >
-			<ul style="background-color:#E8EBEC " id="signup" >
-				<li style="background-color:#E8EBEC " id="login_list">
-					<form style="background-color:#E8EBEC ">
-						<h3>Sign Up</h3>
-						<label for="fname_signup">First Name</label><br>
-						<input type="text" id="fname_signup" name="fname_signup" placeholder="Enter First Name"><br>
-						<label for="lname_signup">Last Name</label><br>
-						<input type="text" id="lname_signuo" name="lname_signup" placeholder="Enter Last Name"><br>
-						<label for="email_login">Email Id</label><br>
-						<input type="Email" id="email_signup" name="email_signup" placeholder="Enter Email ID"><br>
-						<label for="bday_signup">Date of Birth:</label><br>
-						<input type="date" id="bday_signup" name="bday_signup"><br>
-						<label for="add_signup">Address:</label><br>
-						<input type="text" id="add_signup" name="add_signup"><br>
-						<label for="username">User Name</label><br>
-						<input type="text" id="username" name="username"><br>
-						<label for="pswd">Password:</label><br>
-						<input type="password" id="pswd" name="pswd"><br>
-						<label for="con_pswd">Confirm  Password:</label><br>
-						<input type="password" id="con_pswd" name="con_pswd"><br>
-				</li>
-				<li style="background-color:#E8EBEC ">
-					<form style="background-color:#E8EBEC ">
-						<h3>Login</h3>
-						<label for="text">User Name</label><br>
-						<input type="text" id="user_login" name="user_login" placeholder="Enter user name"><br>
-						<label for="password">Password</label><br>
-						<input type="password" id="password" name="password" placeholder="Enter Password"><br>
-						
-						
-				</li>
-			</ul>
-		</div>
-	</div>
 </body>
 </html>
