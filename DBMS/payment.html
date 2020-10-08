@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <title>Car Rental</title>
+  <link rel="icon" href="logo.png" type="image/icon type">
+  <link href = "payment_final.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <script src="payment.js"></script>
+  <style>
+html {
+  scroll-behavior: smooth;
+  background-color: #FFF;
+}
+</style>
+</head>
+<body>
+  <div style = "background-color: #FFF" id ="home">
+    <div style="background-color:#154C6A" id = "details">
+
+      <ul>
+
+        <li><a href="index.html" >Home</a></li>
+        <li id="logo"><img src="logo.png"></li>
+        <li style="float:left"><a >Payment</a></li>
+        
+        
+      </ul>
+    </div>
+    <div class="container" style="height:430px">
+
+      <div style="height:122%" class="payment_type">
+        
+        <div  class="type" id="credit_card"  onclick="displayForm(this)">
+          <span><i class="fa fa-credit-card" aria-hidden="true"></i><a>    Credit/Debit Card</a></span>
+        </div>
+        <div  class="type" id = "payp" onclick="displayForm(this)"><span><i class="fa fa-paypal" aria-hidden="true"></i><a>   PayPal</a></span></div>
+        <div  class="type" id = "NB" onclick="displayForm(this)"><span><i class="fa fa-globe" aria-hidden="true"></i><a>    Net Banking</a></span></div>
+      
+      </div>
+      <div style="display:inline-block" id="form_container" >
+        
+        <div class = "form_entries" id="card" style = "display:none">
+          
+          <div class="column-1">
+        <label for="cardholder">Card Number</label>
+        <input type="text" id="cardholder" />
+ 
+        <div class="small-inputs">
+          <div>
+            <label for="date">Valid thru</label>
+            <input type="text" id="date" placeholder="MM / YY" />
+          </div>
+ 
+          <div>
+            <label for="verification">CVV / CVC *</label>
+            <input type="password" id="verification"/>
+
+          </div>
+        </div>
+ 
+      </div>
+      <div class="column-2">
+        <label for="cardnumber">Cardholder's Name</label>
+        <input type="password" id="cardnumber"/>
+ 
+       
+      </div>
+      <div>
+        <button class="column-2" id="process_button" >Process Payment</button>
+      </div>
+          
+        </div>
+        <script>
+          document.getElementById("card").style.display = "block";
+          document.getElementById("credit_card").classList.add("active");
+        </script>
+        <div class = "form_entries" id="paypal" >
+          
+          <div class="column-1">
+      <h2 style="text-align:center" id="content">Login into your PayPal account to complete the payment</h2>
+ 
+      </div>
+      <div class="column-2">
+        
+ 
+       
+      </div>
+      <div>
+        <a href="https://www.paypal.com/in/signin"> <button class="column-2" id="process_button_paypal"  >Login In</button></a>
+      </div>
+          
+        </div>
+         <div class = "form_entries" id="netBanking">
+          
+          <div class="column-1">
+        <label for="cardholder">Bank account number</label>
+        <input type="text" id="cardholder" />
+ 
+        <div class="small-inputs">
+          <div>
+            <label for="date" >Beneficiary name</label>
+            <input type="text" id="date" />
+          </div>
+ 
+          <div>
+            <label for="verification">IFSC Code</label>
+            <input type="password" id="verification"/>
+
+          </div>
+        </div>
+ 
+      </div>
+      <div class="column-2">
+        <label for="cardnumber">Branch address</label>
+        <input type="password" id="cardnumber"/>
+ 
+       
+      </div>
+      <div>
+        <button class="column-2" id="process_button" >Process Payment</button>
+      </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
