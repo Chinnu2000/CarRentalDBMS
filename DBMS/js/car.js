@@ -1,8 +1,1 @@
-window.addEventListener('load', () => {
-
-    
-    const name = sessionStorage.getItem('NAME');
-    
-    document.getElementById('car-name').innerHTML = name;
-
-})
+document.getElementById("car-name").innerHTML = sessionStorage.getItem("NAME");
