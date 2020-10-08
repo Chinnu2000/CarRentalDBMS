@@ -1,6 +1,5 @@
-function submit(){
-	var text =  document.getElementById("username").value;
-
-	
-	sessionStorage.setItem("NAME", text);
+function handleSubmit(){
+    const name=document.getElementById('name').value;
+	sessionStorage.setItem('NAME',name);
+	return;
 }
