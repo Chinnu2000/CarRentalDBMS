@@ -165,11 +165,11 @@
   
   #strength{
     position:relative;
-    top:-5px;
+    top:-10px;
   }
 </style>
          <input name="password" placeholder = "Password" id="password" type="password" size="15" maxlength="100" onkeyup="return passwordChanged();" />
-<span id="strength">Type Password</span>
+<span id="strength"></span>
           <p id="passwordHelp" class="invalid-feedback d-block"></p>
           <input
             type="password"
@@ -178,7 +178,7 @@
             id="cnfPassword"
             onkeyup="return passwordChanged();"
           />
-          <p id="cnfPasswordHelp" class="invalid-feedback d-block"></p>
+          <span id="cnfPasswordHelp" class="invalid-feedback d-block"></span>
           <a href="..\car.html"><button class="button button2" type="submit" >Sign up</button><a>
         </form>
       </div>
