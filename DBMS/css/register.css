@@ -54,6 +54,8 @@ body {
   width: 600px;
   height: 900px;
   border-color: black;
+  position:relative;
+  top:-20px;
 }
 
 .button2 {
