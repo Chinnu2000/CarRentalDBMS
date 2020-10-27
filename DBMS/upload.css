@@ -1,0 +1,58 @@
+ul{
+  background-color: #154C6A;
+}
+li{
+  background-color: #154C6A;
+  float:right;
+  margin-right:10px;
+  font-size: 20px;
+}
+
+html,body{
+  height:100%;
+  background-color: #c1dcf5;
+ 
+}
+
+.bg {
+  /* The image used */
+  background-image: url("half car.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#car_name{
+  display: inline;
+}
+
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #154C6A;
+  margin-top: 10px;
+  padding-right: 5px;
+  font-family: "Arial","Lucida Console",  monospace;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#logo{
+  float:left;
+  padding-right: 5px;
+}
