@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href = "upload.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  transition: 0.3s;
+  width: 50%;
+  text-align: center;
+  padding-left:45px;
+  padding-top: 10px;
+  top:45px;
+  position: relative;
+  margin-left: 40px;
+  height:450px;
+
+}
+#car_name[type=text]:focus{
+  border-bottom: 3px solid black;
+}
+
+#car_details{
+  position:relative;
+  left:-20px;
+}
+
+
+input{
+  position: relative;
+  
+}
+
+#car_amount,#car_modelid,#car_fuel{
+
+  position: relative;
+  left: -58px;
+
+}
+
+#car_name,#car_brand,#car_color{
+  left:15px;
+}
+
+.form-control{
+  border-top:0px solid white;
+  border-left: 0px solid white;
+  border-right: 0px solid white;
+  border-bottom: 1.5px solid black;
+  margin-top:30px;
+  position: relative;
+  left: -58px;
+
+}
+#car_des{
+  border-top:0px solid white;
+  border-left: 0px solid white;
+  border-right: 0px solid white;
+  border-bottom: 1.5px solid black;
+  position: relative;
+  margin:30px;
+  left:-12px;
+}
+
+#car_image{
+  width:100px;
+  position: relative;
+  left:50px;
+  border-bottom: 2px solid white;
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<body style="background-color:  #c1dcf5" class="bg">
+  <div style="background-color:#154C6A" id = "details">
+    <ul>
+      <li><a href="/html/register.html">Sign Up</a></li>
+      <li><a href="/html/login.html" target="_blank">Login</a></li>
+      <li><a href="car.html">Cars</a></li>
+      <li id="logo"><img src="logo.png"></li>
+        
+    </ul>
+  </div>
+
+
+
+<div class="card" style="left:20%">
+ <div><h2 style="text-align: center" id="car_details">Car Details</h2></div>
+  <div class="container">
+   <form class="form-inline" action="/action_page.php">
+  
+  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter car name" id="car_name">
+  
+  <input style = "left:85px" type="number" class="form-control mb-2 mr-sm-2" placeholder="Enter amount" id="car_amount">
+   <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter brand" id="car_brand">
+  
+  <input style = "left:85px" type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter model ID" id="car_modelid">
+   <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter color" id="car_color">
+  
+  <input style = "left:85px" type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter fuel type" id="car_fuel">
+   <textarea class="form-control" id="car_des" aria-label="With textarea"  placeholder="Car description"></textarea>
+   <input  type="file" class="form-control mb-2 mr-sm-2" placeholder="Enter fuel type" id="car_image">
+</form>
+
+  </div>
+</div>
+
+</body>
+</html> 
