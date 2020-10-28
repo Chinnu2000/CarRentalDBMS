@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<title>Car Rental</title>
+	<link rel="icon" href="../car images/logo.png" type="image/icon type">
+	<link href = "../css/index.css" rel="stylesheet">
+	<script src="../js/carousel.js"></script>
+	<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+<body>
+	<div style = "background-color: #E8EBEC" id ="home">
+		<div style="background-color:#007bff" id = "details">
+
+			<ul>
+
+				<li><a href="register.html">Sign Up</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="car.html">Cars</a></li>
+				<li id="logo"><img src="../car images/logo.png"></li>
+				
+			</ul>
+		</div>
+		<div  id="travel">Start your wonderful journey!!<br/>
+			<p style="font-size: 35px">Car Rental Service</p>
+			<a href="#target"><button id="start" >Let's get started!</button></a>
+		</div>
+
+		<p id="target"><h1 class="about_content">About the Project</h1>
+			<h2 class="about_content">Topic: Online Car Rental System</h2>
+			<p class="about_content" id="intro" >Our project is an online website that manages a car renting business. The system provides the user to rent a car as per their specifications like brand, cost, capacity, etc. It provides all functions including listing car information, booking, and payment. The admin can add a car, manage booking car and rent and also view feedback and enquiry. Users can view information of available cars, booking cars, easily get the car on rent and also give feedback and can do enquiry.<br/>
+				<br/>
+				<br/>
+				Tools used:<br/>
+				Front End: HTML, CSS<br/>
+				Back End: Angular JS
+			</p>
+		</p>
+		<div id="carousel_container">
+			<div id="0" class="slides" >
+				<script>
+					document.getElementById(0).style.display = "block";
+				</script>
+				<img src="../car images/backlight.jpg" style="width:100%" class="mySlides fade">
+				<a class="prev" id = "prev1" onclick="plusSlides(-1)" style="color: #ffffff">&#10094;</a>
+				<a class="next" id = "next1" onclick="plusSlides(1)" style = "color: #ffffff">&#10095;</a>
+				<div class="num">1/3</div>
+			</div>
+			<div id="1" class="slides" style="height:100%">
+				<img src="../car images/car_mountail.jpg" style="width:100%" class="mySlides fade">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="num">2/3</div>
+			</div>
+			<div id="2" class="slides" style="height:100%">
+				<img src="../car images/orange.jpg" style="width:100%" class="mySlides fade">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="num">3/3</div>
+			</div>
+			
+  		</div>
+  		<div style="text-align:center">
+  <span class="dot" id="3" onclick="currentSlide(1)"></span> 
+  <span class="dot" id="4" onclick="currentSlide(2)"></span> 
+  <span class="dot" id="5" onclick="currentSlide(3)"></span> 
+</div>
+  	</div>
+		
+
+</body>
+</html>

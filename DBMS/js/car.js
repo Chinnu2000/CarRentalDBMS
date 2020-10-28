@@ -1,4 +1,3 @@
-  
 window.addEventListener('load', () => {
 
     // Via Query parameters - GET
@@ -12,6 +11,6 @@ window.addEventListener('load', () => {
     
     const name = sessionStorage.getItem('NAME');
     
-    document.getElementById('result-name').innerHTML = name;
+    document.getElementById('car-name').innerHTML = name;
 
 })
