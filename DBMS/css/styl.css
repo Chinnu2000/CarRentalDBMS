@@ -5,7 +5,7 @@ html, body {
 }
 body {
   overflow: hidden;
-  background: url(halfcar.jpg) left top no-repeat;
+  background: url(../car images/half car.jpg) left top no-repeat;
   background-size: cover;
 }
 
